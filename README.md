@@ -23,4 +23,4 @@ To get the app up and running on your local machine, follow these steps:
 
 ## Support
 
-If you encounter any issues or need assistance, please contact us at `7020784576`.
+If you encounter any issues or need assistance, please contact  at `7020784576`.
