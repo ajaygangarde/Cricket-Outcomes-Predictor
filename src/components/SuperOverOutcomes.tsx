@@ -96,14 +96,6 @@ export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
         }
     }, [runTotal, wicketCount])
 
-    // const checkAllPropertiesHaveValues = useMemo(() => {
-    //     return rows.every((obj: any) => {
-    //         // Get all values of the object properties
-    //         const values = Object.values(obj);
-    //         // Check if every value is truthy (not empty, not null, not undefined, not false)
-    //         return values.every(value => value !== "" && value != null);
-    //     });
-    // }, [rows])
 
     return (
         <div className="multi-select-component">
