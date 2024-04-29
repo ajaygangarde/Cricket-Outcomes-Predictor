@@ -15,6 +15,7 @@ Commentary are also shown with Runs (commentary randomly changes as per outcome 
 ### CHALLENGE III 
 	`Super Over` TARGET = 21 and WICKETS_IN_HAND = 2 and BOWL = 6
 	 Based on below iamge selection combination we can conclude the India's Win. 
-	 ![image](https://github.com/ajaygangarde/Cricket-Outcomes-Predictor/assets/2355928/1a7c775d-00a4-4c3c-a0c3-30c90e2a8b17)
+  
+ ![image](https://github.com/ajaygangarde/Cricket-Outcomes-Predictor/assets/2355928/1a7c775d-00a4-4c3c-a0c3-30c90e2a8b17)	
 	 
 If you find any difficulty please connect - `7020784576`
