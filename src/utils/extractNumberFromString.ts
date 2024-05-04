@@ -1,5 +1,5 @@
 
-export const extractNumberFromString = (text: string) => {
+export const extractNumberFromString = (text: string): number => {
     const match = text.match(/\d+/); // This regex finds one or more digits in the string
     if (match) {
         const number = parseInt(match[0], 10); // Convert the first group of digits found to a base-10 integer
