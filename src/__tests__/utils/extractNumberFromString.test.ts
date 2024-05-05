@@ -2,7 +2,7 @@ import { extractNumberFromString } from "../../utils/extractNumberFromString";
 
 describe('Allow to extract number from the String efficiently', () => {
     it('should return the number when a valid number is within the string', () => {
-      expect(extractNumberFromString('1 Runs')).toBe(5);
+      expect(extractNumberFromString('1 Run')).toBe(1);
     });
   
     it('should return 0 if the number is greater than 6', () => {

@@ -47,6 +47,7 @@
     "vite": "^5.1.6"
   },
   "jest": {
+    "verbose": true,
     "preset": "ts-jest",
     "roots": [
       "<rootDir>/src"
