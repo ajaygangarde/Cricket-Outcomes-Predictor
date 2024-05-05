@@ -1,4 +1,5 @@
 import { TimingType } from "../configs/constant"
+import * as React from "react";
 
 type IProps = {
     timings: string[],

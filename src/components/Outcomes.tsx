@@ -1,6 +1,7 @@
 import * as React from "react";
 import { IOutcomeTypes } from "../configs/constant"
 import { getRandomCommentary } from "../utils/getRandomCommentary";
+
 type IProps = {
     outcomes: IOutcomeTypes[],
 }

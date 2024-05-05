@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useEvaluateOutcome } from '../hooks/useEvaluateOutcome';
 import { useEvaluateWinOrLoss } from '../hooks/useEvaluateWinOrLoss';
 import { useSetOutcomeFields } from '../hooks/useSetOutcomeFields';

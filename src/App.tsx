@@ -1,4 +1,5 @@
 import './App.css'
+import * as React from "react";
 import players from './assets/players-new-latest.png';
 import { SuperOverOutcomes } from './components/SuperOverOutcomes';
 import { BowlTypes, ShotTypes, TimingTypes } from './configs/constant';

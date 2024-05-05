@@ -1,4 +1,5 @@
 import { ShotType } from "../configs/constant"
+import * as React from "react";
 
 type IProps = {
     shots: string[],

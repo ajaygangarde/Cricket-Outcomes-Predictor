@@ -1,4 +1,5 @@
 import { BowlType } from "../configs/constant"
+import * as React from "react";
 
 type IProps = {
     deliveries: string[],
