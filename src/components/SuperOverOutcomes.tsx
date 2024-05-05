@@ -19,6 +19,7 @@ export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
     const { handleDeliveryChange,
         handleShotChange,
         handleTimingChange,
+        handleReset,
         addMore,
         bowlCount, rows } = useSetOutcomeFields();
     const { outcomes,
@@ -29,6 +30,7 @@ export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
 
     return (
         <div className="multi-select-component">
+            <button onClick={handleReset}>Reset</button>
             {rows.map((row, index) => (
                 <div key={index} className="card">
                     <BowlSelection
@@ -48,7 +50,8 @@ export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
                     />
                 </div>
             ))}
-            <button onClick={addMore}>Deliver Bowl -  {bowlCount}</button>
+            {bowlCount < 7 && <button onClick={addMore}>Deliver Bowl -  {bowlCount}</button>}
+            
             <div className="container row">
                 <Outcomes outcomes={outcomes} />
             </div>

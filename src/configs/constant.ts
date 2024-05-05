@@ -398,3 +398,8 @@ export const cricketData: ICricketData = {
 //SUPER OVER CONFIGS
 export const TARGET_SCORE_FOR_WINNING = 21
 export const WICKET_IN_HAND = 2
+export const APP_MESSAGE = {
+    LOSS: "India Lost the Match",
+    WIN_MATCH: "Congratulation India Won the Match",
+    ALL_OUT: "All Out, India Lost the Match."
+}

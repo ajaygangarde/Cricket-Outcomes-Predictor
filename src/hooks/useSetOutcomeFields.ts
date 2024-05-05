@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IOutcomeFields, IOutcomeFieldsModel } from "../types/types";
+import { validateDataAvailable } from "../utils/validateDataAvailable";
 
 export const useSetOutcomeFields = () => {
     const [rows, setRows] = useState<IOutcomeFields[]>([IOutcomeFieldsModel]);
@@ -37,15 +38,23 @@ export const useSetOutcomeFields = () => {
 
     const addMore = () => {
         if (rows.length < 6) {
+            if (!validateDataAvailable(rows as any)) {
+                window.alert("Please select delivery, shot and timing from dropdown.")
+                return false
+            }
             setRows([...rows, { delivery: '', shot: '', timing: '' }]);
             setBowlCount((pre) => (pre + 1))
         }
     };
+    const handleReset = () => {
+        setRows([IOutcomeFieldsModel])
+    }
 
     return {
         handleDeliveryChange,
         handleShotChange,
         handleTimingChange,
+        handleReset,
         addMore,
         bowlCount,
         rows
