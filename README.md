@@ -10,7 +10,6 @@ To get the app up and running on your local machine, follow these steps:
    - E2E testing using Chrome. 
 6. `NOTE` Please do `npm install` again after deleting `node_moduels` folder as New packages has been added. 
 
-
 ## Challenges Overview
 
 ### Challenge I
@@ -28,8 +27,12 @@ To get the app up and running on your local machine, follow these steps:
 
 
 ### Unit Tests - Jest and RTL
+![image](https://github.com/ajaygangarde/Cricket-Outcomes-Predictor/assets/2355928/14ae9ce9-0f5d-4dab-9719-d27595e5efaa)
+
 
 ### E2E test - Cypress JS
+![image](https://github.com/ajaygangarde/Cricket-Outcomes-Predictor/assets/2355928/bc3d4fb3-2dde-4933-a4cf-625fb4b9f7a5)
+
 
 ## Support
 
