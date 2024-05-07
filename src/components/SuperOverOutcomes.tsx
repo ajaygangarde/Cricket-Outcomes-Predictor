@@ -34,28 +34,31 @@ export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
             {rows.map((row, index) => (
                 <div key={index} className="card">
                     <BowlSelection
+                        index={index}
                         deliveries={deliveries}
                         selectedDelivery={row.delivery}
                         handleDeliveryChange={(value) => handleDeliveryChange(index, value)}
                     />
                     <ShotSelection
+                        index={index}
                         shots={shots}
                         selectedShot={row.shot}
                         handleShotChange={(value) => handleShotChange(index, value)}
                     />
                     <Timings
+                        index={index}
                         timings={timings}
                         selectedTiming={row.timing}
                         handleTimingChange={(value) => handleTimingChange(index, value)}
                     />
                 </div>
             ))}
-            {bowlCount < 7 && <button onClick={addMore}>Deliver Bowl -  {bowlCount}</button>}
-            
+            {bowlCount < 7 && <button data-testid="add-more" onClick={addMore}>Deliver Bowl -  {bowlCount}</button>}
+
             <div className="container row">
                 <Outcomes outcomes={outcomes} />
             </div>
-            {winOrLossMatch && <span className="outcome-result">Match Result : {winOrLossMatch}</span>}
+            {winOrLossMatch && <span className="outcome-result" data-testid="win-or-loss-test">Match Result : {winOrLossMatch}</span>}
         </div>
     );
 }

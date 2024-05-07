@@ -1,11 +1,29 @@
 import '@testing-library/jest-dom'
-import { render } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 import App from "../App"
 import * as React from "react";
 
 
-test("Renders the main page", () => {
-    render(<App />)
-    expect(true).toBeTruthy()
+describe("Renders App Component", () => {
+    it('renders without crashing', () => {
+        render(<App />);
+        expect(screen.getByText(/Cricket Outcomes Predictor/i)).toBeInTheDocument();
+    });
+
+    it('Validate App component has three child component Delivery, Shot and outcome', () => {
+        render(<App />);
+        const delivery = screen.getByText(/Select Delivery/i);
+        const shotShot = screen.getByText(/Select Shot/i);
+        const shotTiming = screen.getByText(/Select Timing/i);
+        expect(delivery).toBeVisible();
+        expect(shotShot).toBeVisible();
+        expect(shotTiming).toBeVisible();
+    });
+
 })
+
+
+
+
+
 

@@ -8,9 +8,9 @@ type IProps = {
 export const OutcomesMemo = ({ outcomes }: IProps) => {
     return (
         <>
-            <ul className="outcome-lists" >
-                {outcomes && outcomes.map((outcome,) => (
-                    <li className="outcome-result">{getRandomCommentary(outcome.commentary)} - {outcome.output}</li>
+            <ul className="outcome-lists" data-testid="outcome-lists-item">
+                {outcomes && outcomes.map((outcome, index) => (
+                    <li className="outcome-result" key={`${index}"-"${outcome.output.replace(' ', '')}`}>{getRandomCommentary(outcome.commentary)} - {outcome.output}</li>
                 ))}
             </ul>
         </>

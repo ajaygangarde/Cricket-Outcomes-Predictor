@@ -38,7 +38,7 @@ export const useSetOutcomeFields = () => {
 
     const addMore = () => {
         if (rows.length < 6) {
-            if (!validateDataAvailable(rows as any)) {
+            if (!validateDataAvailable(rows)) {
                 window.alert("Please select delivery, shot and timing from dropdown.")
                 return false
             }

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <img className="playerImage" style={{ height: 250 }} src={players} />
+      <img className="player-image" src={players} />
       <h1>Cricket Outcomes Predictor</h1>
       <SuperOverOutcomes deliveries={BowlTypes} shots={ShotTypes} timings={TimingTypes} />
     </>
