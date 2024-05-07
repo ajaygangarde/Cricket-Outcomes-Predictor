@@ -4,7 +4,6 @@
 export type BowlType = string;
 export type ShotType = string;
 export type TimingType = string;
-// export type TimingType = 'Early' | 'Good' | 'Perfect' | 'Late' | '';
 // used in front end dropdown
 export const BowlTypes: BowlType[] = ['Bouncer', 'Outswinger', 'Yorker', 'Off Break', 'Inswinger', 'Leg Cutter', 'Slower Ball', 'Pace', 'Off Cutter', 'Doosra']
 export const ShotTypes: ShotType[] = ['Straight', 'Flick', 'Long On', 'SquareCut', 'Sweep', 'CoverDrive', 'Pull', 'Scoop', 'LegLance', 'UpperCut']

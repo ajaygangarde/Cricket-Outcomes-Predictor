@@ -4,8 +4,6 @@ import players from './assets/players-new-latest.png';
 import { SuperOverOutcomes } from './components/SuperOverOutcomes';
 import { BowlTypes, ShotTypes, TimingTypes } from './configs/constant';
 function App() {
-
-
   return (
     <>
       <img className="player-image" src={players} />

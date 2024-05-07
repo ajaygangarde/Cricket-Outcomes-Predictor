@@ -12,10 +12,7 @@ interface Iprops {
     shots: string[],
     timings: string[]
 }
-
-
 export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
-
     const { handleDeliveryChange,
         handleShotChange,
         handleTimingChange,
@@ -26,8 +23,6 @@ export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
         wicketCount,
         runTotal } = useEvaluateOutcome(rows)
     const { winOrLossMatch } = useEvaluateWinOrLoss(wicketCount, runTotal, rows)
-
-
     return (
         <div className="multi-select-component">
             <button onClick={handleReset}>Reset</button>
@@ -54,7 +49,6 @@ export const SuperOverOutcomes = ({ deliveries, shots, timings }: Iprops) => {
                 </div>
             ))}
             {bowlCount < 7 && <button data-testid="add-more" onClick={addMore}>Deliver Bowl -  {bowlCount}</button>}
-
             <div className="container row">
                 <Outcomes outcomes={outcomes} />
             </div>
